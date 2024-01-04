@@ -1,0 +1,11 @@
+com.leads.test.shared-sqlite-framework-2.3.1-0 /Users/leads/.gradle/caches/transforms-3/1a118eb0071a9a31413b6a6bcb63c029/transformed/sqlite-framework-2.3.1/res
+com.leads.test.shared-sqlite-2.3.1-1 /Users/leads/.gradle/caches/transforms-3/f05b6bad40f55cabb62074fbbf00c25d/transformed/sqlite-2.3.1/res
+com.leads.test.shared-pngs-2 /Users/leads/Documents/Office2/Office/Capital-28.12.23/shared/build/generated/res/pngs/release
+com.leads.test.shared-resValues-3 /Users/leads/Documents/Office2/Office/Capital-28.12.23/shared/build/generated/res/resValues/release
+com.leads.test.shared-mergeReleaseResources-4 /Users/leads/Documents/Office2/Office/Capital-28.12.23/shared/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.leads.test.shared-mergeReleaseResources-5 /Users/leads/Documents/Office2/Office/Capital-28.12.23/shared/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.leads.test.shared-merged_res-6 /Users/leads/Documents/Office2/Office/Capital-28.12.23/shared/build/intermediates/merged_res/release
+com.leads.test.shared-androidMain-7 /Users/leads/Documents/Office2/Office/Capital-28.12.23/shared/src/androidMain/res
+com.leads.test.shared-androidRelease-8 /Users/leads/Documents/Office2/Office/Capital-28.12.23/shared/src/androidRelease/res
+com.leads.test.shared-main-9 /Users/leads/Documents/Office2/Office/Capital-28.12.23/shared/src/main/res
+com.leads.test.shared-release-10 /Users/leads/Documents/Office2/Office/Capital-28.12.23/shared/src/release/res

@@ -10,7 +10,12 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
-		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		2BE2A2632B459A5700108588 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2602B459A5700108588 /* HomeView.swift */; };
+		2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2622B459A5700108588 /* ProfileView.swift */; };
+		2BE2A2682B459B4E00108588 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2662B459B4E00108588 /* RegistrationView.swift */; };
+		2BE2A2692B459B4E00108588 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2672B459B4E00108588 /* LoginView.swift */; };
+		2BE2A26D2B459B8300108588 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A26B2B459B8300108588 /* HomeViewRow.swift */; };
+		2BE2A26E2B459B8300108588 /* inputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A26C2B459B8300108588 /* inputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,8 +35,13 @@
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		2BE2A2602B459A5700108588 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2BE2A2622B459A5700108588 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2BE2A2662B459B4E00108588 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		2BE2A2672B459B4E00108588 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2BE2A26B2B459B8300108588 /* HomeViewRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		2BE2A26C2B459B8300108588 /* inputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputView.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +64,64 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2BE2A25F2B459A5700108588 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2BE2A2602B459A5700108588 /* HomeView.swift */,
+				2BE2A2612B459A5700108588 /* profile */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2BE2A2612B459A5700108588 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				2BE2A2622B459A5700108588 /* ProfileView.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		2BE2A2652B459B4E00108588 /* login & Registration */ = {
+			isa = PBXGroup;
+			children = (
+				2BE2A2662B459B4E00108588 /* RegistrationView.swift */,
+				2BE2A2672B459B4E00108588 /* LoginView.swift */,
+			);
+			path = "login & Registration";
+			sourceTree = "<group>";
+		};
+		2BE2A26A2B459B8300108588 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				2BE2A26B2B459B8300108588 /* HomeViewRow.swift */,
+				2BE2A26C2B459B8300108588 /* inputView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		2BE2A26F2B459D4F00108588 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BE2A25F2B459A5700108588 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2BE2A2702B459D5E00108588 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BE2A2722B459DB900108588 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2152FB032600AC8F00CF470E /* iOSApp.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		7555FF72242A565900829871 = {
 			isa = PBXGroup;
 			children = (
@@ -74,10 +142,13 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				2BE2A2722B459DB900108588 /* Root */,
+				2BE2A26A2B459B8300108588 /* Component */,
+				2BE2A2702B459D5E00108588 /* Model */,
+				2BE2A26F2B459D4F00108588 /* Views */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
-				7555FF82242A565900829871 /* ContentView.swift */,
+				2BE2A2652B459B4E00108588 /* login & Registration */,
 				7555FF8C242A565B00829871 /* Info.plist */,
-				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
 			);
 			path = iosApp;
@@ -182,8 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE2A26D2B459B8300108588 /* HomeViewRow.swift in Sources */,
+				2BE2A2692B459B4E00108588 /* LoginView.swift in Sources */,
+				2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */,
+				2BE2A2632B459A5700108588 /* HomeView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				2BE2A26E2B459B8300108588 /* inputView.swift in Sources */,
+				2BE2A2682B459B4E00108588 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
