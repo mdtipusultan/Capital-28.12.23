@@ -10,6 +10,7 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
+		2B3F94FC2B4917EB007B197A /* BiometricAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F94FB2B4917EB007B197A /* BiometricAuthView.swift */; };
 		2BE2A2632B459A5700108588 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2602B459A5700108588 /* HomeView.swift */; };
 		2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2622B459A5700108588 /* ProfileView.swift */; };
 		2BE2A2682B459B4E00108588 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2662B459B4E00108588 /* RegistrationView.swift */; };
@@ -35,6 +36,7 @@
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		2B3F94FB2B4917EB007B197A /* BiometricAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthView.swift; sourceTree = "<group>"; };
 		2BE2A2602B459A5700108588 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2BE2A2622B459A5700108588 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2BE2A2662B459B4E00108588 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2B3F94FA2B4917C8007B197A /* login */ = {
+			isa = PBXGroup;
+			children = (
+				2BE2A2672B459B4E00108588 /* LoginView.swift */,
+				2B3F94FB2B4917EB007B197A /* BiometricAuthView.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 		2BE2A25F2B459A5700108588 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +95,8 @@
 		2BE2A2652B459B4E00108588 /* login & Registration */ = {
 			isa = PBXGroup;
 			children = (
+				2B3F94FA2B4917C8007B197A /* login */,
 				2BE2A2662B459B4E00108588 /* RegistrationView.swift */,
-				2BE2A2672B459B4E00108588 /* LoginView.swift */,
 			);
 			path = "login & Registration";
 			sourceTree = "<group>";
@@ -258,6 +269,7 @@
 				2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */,
 				2BE2A2632B459A5700108588 /* HomeView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				2B3F94FC2B4917EB007B197A /* BiometricAuthView.swift in Sources */,
 				2BE2A26E2B459B8300108588 /* inputView.swift in Sources */,
 				2BE2A2682B459B4E00108588 /* RegistrationView.swift in Sources */,
 			);
