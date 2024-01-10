@@ -19,7 +19,7 @@ struct inputView: View {
             
             Text(title)
                 .fontWeight(.semibold)
-                .foregroundColor(Color(red: 0.1568627450980392, green: 0.1568627450980392, blue: 0.1568627450980392))
+                .foregroundColor(Color(red: 0.157, green: 0.1568627450980392, blue: 0.1568627450980392))
                 .font(.footnote)
             
             if isSecureField{

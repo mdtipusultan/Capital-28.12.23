@@ -15,6 +15,7 @@ struct LoginView: View {
     
     @State private var rememberMe = false
     @State var isShowingPassword: Bool = false
+    @State private var isLogged = false
     //978c21--> COLOR HEXA
     
     var body: some View {
@@ -34,10 +35,9 @@ struct LoginView: View {
                     VStack(alignment: .leading) {
                         Text("Username")
                         TextField("Enter your Username", text: $username)
-                        //.textFieldStyle(RoundedBorderTextFieldStyle())
                         
-                            .padding(.vertical, 10) // Increase vertical padding for increased height
-                            .padding(.horizontal, 10) // Add horizontal padding to create space between text and border
+                            .padding(.vertical, 10)
+                            .padding(.horizontal, 10)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
                                     .stroke(Color.black, lineWidth: 1)
@@ -98,7 +98,7 @@ struct LoginView: View {
                         .padding(.leading, 20)
                         Spacer()
                         NavigationLink {
-                            RegistrationView()
+                            password_recovery()
                                 .navigationTitle("Password Recovery")
                             
                         } label: {
@@ -115,10 +115,9 @@ struct LoginView: View {
                     }
                     
                     //LOGIN button
-                    Button {
-                        print("Log user in..")
+                    NavigationLink {
                         HomeView()
-                        
+                            .navigationBarBackButtonHidden()
                     } label: {
                         HStack{
                             Text("Login")
@@ -130,9 +129,6 @@ struct LoginView: View {
                     .background(Color(red: 0.592156862745098, green: 0.5490196078431373, blue: 0.12941176470588237))
                     .cornerRadius(30)
                     .padding(.top,35)
-                    
-                    
-                    //Spacer()
                     
                     
                     //SIGN-UP BUTTON

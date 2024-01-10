@@ -11,61 +11,63 @@ import shared
 
 struct HomeView: View {
     var body: some View {
-        NavigationView {
-            TabView {
-                NavigationView {
-                    Text("Home")
-                        .navigationBarTitle("First", displayMode: .inline)
-                        .background(Color.blue) // Set the navigation bar color
-                }
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("First")
-                }
-
-                NavigationView {
-                    Text("Second Tab")
-                        .navigationBarTitle("Second", displayMode: .inline)
-                        .background(Color.green) // Set the navigation bar color
-                }
-                .tabItem {
-                    Image(systemName: "2.circle")
-                    Text("Second")
-                }
-
-                NavigationView {
-                    Text("Third Tab")
-                        .navigationBarTitle("Third", displayMode: .inline)
-                        .background(Color.yellow) // Set the navigation bar color
-                }
-                .tabItem {
-                    Image(systemName: "3.circle")
-                    Text("Third")
-                }
-                
-                NavigationView {
-                    Text("4th Tab")
-                        .multilineTextAlignment(.trailing)
-                        .navigationBarTitle("Forth", displayMode: .inline)
-                        .background(Color.yellow) // Set the navigation bar color
-                }
-                .tabItem {
-                    Image(systemName: "4.circle")
-                    Text("Forth")
-                }
-
-                NavigationView {
-                    Text("Profile")
-                        .navigationBarTitle("Profile", displayMode: .inline)
-                        .background(Color.purple) // Set the navigation bar color
-                }
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Profile")
-                }
+        
+        TabView {
+            NavigationView {
+                Text("Home")
+                    .navigationBarTitle("First", displayMode: .inline)
+                    .background(Color.blue)
+            }
+            
+            .tabItem {
+                Image(systemName: "house.fill")
+            }
+            
+            NavigationView {
+                Text("Second Tab")
+                    .navigationBarTitle("Second", displayMode: .inline)
+                    .background(Color.green) // Set the navigation bar color
+            }
+            .tabItem {
+                Image(systemName: "2.circle")            }
+            
+            NavigationView {
+                Text("Third Tab")
+                    .navigationBarTitle("Third", displayMode: .inline)
+                    .background(Color.yellow) // Set the navigation bar color
+            }
+            .tabItem {
+                Image(systemName: "3.circle")
+            
+            }
+            
+            NavigationView {
+                Text("4th Tab")
+                    .multilineTextAlignment(.trailing)
+                    .navigationBarTitle("Forth", displayMode: .inline)
+                    .background(Color.yellow) // Set the navigation bar color
+            }
+            .tabItem {
+                Image(systemName: "4.circle")
+               
+            }
+            
+            NavigationView {
+                Text("Profile")
+                    .navigationBarTitle("Profile", displayMode: .inline)
+                    .background(Color.purple) // Set the navigation bar color
+            }
+            
+            .tabItem {
+                Image(systemName: "person")
+             
             }
         }
+        //tabbar image color
+        //.accentColor(Color.red)
     }
+    
+    
 }
 
 struct HomeView_Previews: PreviewProvider {
