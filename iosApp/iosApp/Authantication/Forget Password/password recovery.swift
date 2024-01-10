@@ -38,7 +38,7 @@ struct password_recovery: View {
             }
             .foregroundColor(.white)
             .frame(width: UIScreen.main.bounds.width - 80, height: 48)
-            .background(Color(red: 0.592156862745098, green: 0.5490196078431373, blue: 0.12941176470588237))
+            .background(Color("AccentColor"))
             .cornerRadius(30)
             Spacer()
         }

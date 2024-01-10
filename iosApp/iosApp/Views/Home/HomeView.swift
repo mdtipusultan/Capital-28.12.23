@@ -15,7 +15,7 @@ struct HomeView: View {
         TabView {
             NavigationView {
                 Text("Home")
-                    .navigationBarTitle("First", displayMode: .inline)
+                    .navigationBarTitle("SHANTA", displayMode: .inline)
                     .background(Color.blue)
             }
             
@@ -55,7 +55,7 @@ struct HomeView: View {
             NavigationView {
                 Text("Profile")
                     .navigationBarTitle("Profile", displayMode: .inline)
-                    .background(Color.purple) // Set the navigation bar color
+                    .background(Color.purple)
             }
             
             .tabItem {
@@ -64,9 +64,10 @@ struct HomeView: View {
             }
         }
         //tabbar image color
-        //.accentColor(Color.red)
+        .accentColor(appColor)
+        .topSafeAreaColor()
     }
-    
+        
     
 }
 

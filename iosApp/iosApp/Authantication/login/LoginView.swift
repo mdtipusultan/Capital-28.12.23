@@ -16,10 +16,10 @@ struct LoginView: View {
     @State private var rememberMe = false
     @State var isShowingPassword: Bool = false
     @State private var isLogged = false
-    //978c21--> COLOR HEXA
+   
     
     var body: some View {
-        if #available(iOS 16.0, *) {
+        
             NavigationStack{
                 VStack{
                     Spacer()
@@ -106,7 +106,7 @@ struct LoginView: View {
                                 Text("Forget Password?")
                                     .fontWeight(.medium)
                                     .underline()
-                                    .foregroundColor(Color(red: 0.592156862745098, green: 0.5490196078431373, blue: 0.12941176470588237))
+                                    .foregroundColor(Color("AccentColor"))
                             }
                             .font(.system(size: 14))
                         }
@@ -126,7 +126,7 @@ struct LoginView: View {
                         .foregroundColor(.white)
                         .frame(width: UIScreen.main.bounds.width - 100, height: 48)
                     }
-                    .background(Color(red: 0.592156862745098, green: 0.5490196078431373, blue: 0.12941176470588237))
+                    .background(Color("AccentColor"))
                     .cornerRadius(30)
                     .padding(.top,35)
                     
@@ -135,7 +135,6 @@ struct LoginView: View {
                     NavigationLink {
                         RegistrationView()
                             .navigationTitle("Registration")
-                        //.navigationBarTitleDisplayMode(<#T##displayMode: NavigationBarItem.TitleDisplayMode##NavigationBarItem.TitleDisplayMode#>)
                         
                     } label: {
                         HStack{
@@ -144,7 +143,7 @@ struct LoginView: View {
                             Text("Sign Up")
                                 .fontWeight(.medium)
                                 .underline()
-                                .foregroundColor(Color(red: 0.592156862745098, green: 0.5490196078431373, blue: 0.12941176470588237))
+                                .foregroundColor(Color("AccentColor"))
                         }
                         .font(.system(size: 14))
                     }
@@ -171,7 +170,7 @@ struct LoginView: View {
                             Text("TouchID")
                                 .fontWeight(.medium)
                                 .underline()
-                                .foregroundColor(Color(red: 0.592156862745098, green: 0.5490196078431373, blue: 0.12941176470588237))
+                                .foregroundColor(Color("AccentColor"))
                         }
                         .font(.system(size: 14))
                     }
@@ -187,19 +186,18 @@ struct LoginView: View {
                         Text("SHANTA")
                             .fontWeight(.medium)
                             .font(.title)
-                            .foregroundColor(Color(red: 0.592156862745098, green: 0.5490196078431373, blue: 0.12941176470588237))
+                            .foregroundColor(Color("AccentColor"))
                     }
                     
                     Spacer()
                 }
                 
             }
-        } else {
-            // Fallback on earlier versions
+            .topSafeAreaColor()
         }
         
         
-    }
+    
 }
 
 struct LoginView_Previews: PreviewProvider {

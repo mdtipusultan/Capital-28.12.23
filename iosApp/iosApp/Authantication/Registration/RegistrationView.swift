@@ -19,33 +19,41 @@ struct RegistrationView: View {
     @State private var confirmPassword = ""
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 10) {
-                inputView(text: $username, title: "Username", placeHolder: "Username")
-                inputView(text: $firstName, title: "First Name", placeHolder: "First Name")
-                inputView(text: $lastName, title: "Last Name", placeHolder: "Last Name")
-                inputView(text: $email, title: "Email", placeHolder: "Email").autocapitalization(.none)
-                inputView(text: $mobileNumber, title: "Mobile Number", placeHolder: "Mobile Number")
-                inputView(text: $accountCode, title: "Account Code", placeHolder: "Account Code")
-                inputView(text: $password, title: "Password", placeHolder: "Password", isSecureField: true)
-                inputView(text: $confirmPassword, title: "Confirm Password", placeHolder: "Confirm Password", isSecureField: true)
-                
-                Button(action: {
-                    print("Signing user in...")
-                }) {
-                    Text("Sign Up")
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color(red: 0.592156862745098, green: 0.5490196078431373, blue: 0.12941176470588237))
-                        .cornerRadius(30)
+        
+        ZStack {
+            Color.red
+            
+            ScrollView {
+                VStack(spacing: 10) {
+                    inputView(text: $username, title: "Username", placeHolder: "Username")
+                    inputView(text: $firstName, title: "First Name", placeHolder: "First Name")
+                    inputView(text: $lastName, title: "Last Name", placeHolder: "Last Name")
+                    inputView(text: $email, title: "Email", placeHolder: "Email").autocapitalization(.none)
+                    inputView(text: $mobileNumber, title: "Mobile Number", placeHolder: "Mobile Number")
+                    inputView(text: $accountCode, title: "Account Code", placeHolder: "Account Code")
+                    inputView(text: $password, title: "Password", placeHolder: "Password", isSecureField: true)
+                    inputView(text: $confirmPassword, title: "Confirm Password", placeHolder: "Confirm Password", isSecureField: true)
+                    
+                    Button(action: {
+                        print("Signing user in...")
+                    }) {
+                        Text("Sign Up")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color("AccentColor"))
+                            .cornerRadius(30)
+                    }
+                    .padding(.horizontal, 20)
                 }
                 .padding(.horizontal, 20)
+                .padding(.top, 40)
+                //.topSafeAreaColor()
             }
-            .padding(.horizontal, 20)
-            .padding(.top, 40)
+            .background(Color.white)
         }
+        //.ignoresSafeArea(.all, edges: .vertical)
     }
 }
 

@@ -14,9 +14,8 @@
 		2B3F95002B4D44CD007B197A /* password recovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F94FF2B4D44CD007B197A /* password recovery.swift */; };
 		2B3F95022B4D6F2B007B197A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95012B4D6F2B007B197A /* Helper.swift */; };
 		2B3F95042B4D6F4A007B197A /* dateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95032B4D6F4A007B197A /* dateFormatter.swift */; };
-		2B3F95092B4DDD58007B197A /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95062B4DDD58007B197A /* Toolbar.swift */; };
-		2B3F950A2B4DDD58007B197A /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95072B4DDD58007B197A /* NavigationBar.swift */; };
 		2B3F950B2B4DDD58007B197A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95082B4DDD58007B197A /* Colors.swift */; };
+		2B3F950D2B4E8832007B197A /* TopSafeAreaColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F950C2B4E8832007B197A /* TopSafeAreaColorModifier.swift */; };
 		2BE2A2632B459A5700108588 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2602B459A5700108588 /* HomeView.swift */; };
 		2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2622B459A5700108588 /* ProfileView.swift */; };
 		2BE2A2682B459B4E00108588 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2662B459B4E00108588 /* RegistrationView.swift */; };
@@ -46,9 +45,8 @@
 		2B3F94FF2B4D44CD007B197A /* password recovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "password recovery.swift"; sourceTree = "<group>"; };
 		2B3F95012B4D6F2B007B197A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		2B3F95032B4D6F4A007B197A /* dateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateFormatter.swift; sourceTree = "<group>"; };
-		2B3F95062B4DDD58007B197A /* Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
-		2B3F95072B4DDD58007B197A /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		2B3F95082B4DDD58007B197A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2B3F950C2B4E8832007B197A /* TopSafeAreaColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSafeAreaColorModifier.swift; sourceTree = "<group>"; };
 		2BE2A2602B459A5700108588 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2BE2A2622B459A5700108588 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2BE2A2662B459B4E00108588 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -106,8 +104,7 @@
 		2B3F95052B4DDD58007B197A /* styling */ = {
 			isa = PBXGroup;
 			children = (
-				2B3F95062B4DDD58007B197A /* Toolbar.swift */,
-				2B3F95072B4DDD58007B197A /* NavigationBar.swift */,
+				2B3F950C2B4E8832007B197A /* TopSafeAreaColorModifier.swift */,
 				2B3F95082B4DDD58007B197A /* Colors.swift */,
 			);
 			path = styling;
@@ -307,11 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3F95042B4D6F4A007B197A /* dateFormatter.swift in Sources */,
+				2B3F950D2B4E8832007B197A /* TopSafeAreaColorModifier.swift in Sources */,
 				2BE2A26D2B459B8300108588 /* HomeViewRow.swift in Sources */,
 				2B3F95002B4D44CD007B197A /* password recovery.swift in Sources */,
 				2B3F950B2B4DDD58007B197A /* Colors.swift in Sources */,
-				2B3F95092B4DDD58007B197A /* Toolbar.swift in Sources */,
-				2B3F950A2B4DDD58007B197A /* NavigationBar.swift in Sources */,
 				2BE2A2692B459B4E00108588 /* LoginView.swift in Sources */,
 				2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */,
 				2BE2A2632B459A5700108588 /* HomeView.swift in Sources */,

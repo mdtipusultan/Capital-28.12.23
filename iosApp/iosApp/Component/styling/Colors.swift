@@ -2,9 +2,6 @@
 //  Colors.swift
 //  iosApp
 //
-//  Created by Daniele Baroncelli on 14/05/21.
-//  Copyright © 2021 orgName. All rights reserved.
-//
 
 import Foundation
 import SwiftUI
@@ -14,3 +11,5 @@ let linkColor = Color(.sRGB, red: 209/255, green: 190/255, blue: 245/255, opacit
 let magentaColor = Color(.sRGB, red: 1, green: 0, blue: 1, opacity: 1) // purple
 let greyColor = Color(.sRGB, red: 170/255, green: 170/255, blue: 170/255, opacity: 1) // grey
 let lightGreyColor = Color(.sRGB, red: 200/255, green: 200/255, blue: 200/255, opacity: 1) // light grey
+
+let appColor = Color(red: 0.592156862745098, green: 0.5490196078431373, blue: 0.12941176470588237)  //978c21--> COLOR HEXA
