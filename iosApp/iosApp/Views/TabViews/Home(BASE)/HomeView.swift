@@ -13,23 +13,17 @@ struct HomeView: View {
     var body: some View {
         
         TabView {
-            NavigationView {
-                Text("Home")
-                    .navigationBarTitle("SHANTA", displayMode: .inline)
-                    .background(Color.blue)
+            shantaHomeView()
+            .tabItem {
+                //Image(systemName: "house.fill")
+                Image(uiImage: UIImage(named: "home")!)
             }
             
+            marketView()
             .tabItem {
-                Image(systemName: "house.fill")
+                //Image(systemName: "2.circle")
+                Image(uiImage: UIImage(named: "market")!)
             }
-            
-            NavigationView {
-                Text("Second Tab")
-                    .navigationBarTitle("Second", displayMode: .inline)
-                    .background(Color.green) // Set the navigation bar color
-            }
-            .tabItem {
-                Image(systemName: "2.circle")            }
             
             NavigationView {
                 Text("Third Tab")
@@ -37,8 +31,8 @@ struct HomeView: View {
                     .background(Color.yellow) // Set the navigation bar color
             }
             .tabItem {
-                Image(systemName: "3.circle")
-            
+                //Image(systemName: "3.circle")
+                Image(uiImage: UIImage(named: "trade")!)
             }
             
             NavigationView {
@@ -48,19 +42,15 @@ struct HomeView: View {
                     .background(Color.yellow) // Set the navigation bar color
             }
             .tabItem {
-                Image(systemName: "4.circle")
-               
+                //Image(systemName: "4.circle")
+                Image(uiImage: UIImage(named: "Services")!)
             }
-            
-            NavigationView {
-                Text("Profile")
-                    .navigationBarTitle("Profile", displayMode: .inline)
-                    .background(Color.purple)
-            }
+         
+            ProfileView()
             
             .tabItem {
-                Image(systemName: "person")
-             
+                //Image(systemName: "person")
+                Image(uiImage: UIImage(named: "profile")!)
             }
         }
         //tabbar image color

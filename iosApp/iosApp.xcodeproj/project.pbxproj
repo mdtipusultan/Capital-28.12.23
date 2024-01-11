@@ -16,6 +16,8 @@
 		2B3F95042B4D6F4A007B197A /* dateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95032B4D6F4A007B197A /* dateFormatter.swift */; };
 		2B3F950B2B4DDD58007B197A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95082B4DDD58007B197A /* Colors.swift */; };
 		2B3F950D2B4E8832007B197A /* TopSafeAreaColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F950C2B4E8832007B197A /* TopSafeAreaColorModifier.swift */; };
+		2B3F95142B4EB1DF007B197A /* shantaHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95132B4EB1DF007B197A /* shantaHomeView.swift */; };
+		2B3F95162B4EB6B7007B197A /* marketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95152B4EB6B7007B197A /* marketView.swift */; };
 		2BE2A2632B459A5700108588 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2602B459A5700108588 /* HomeView.swift */; };
 		2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2622B459A5700108588 /* ProfileView.swift */; };
 		2BE2A2682B459B4E00108588 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2662B459B4E00108588 /* RegistrationView.swift */; };
@@ -47,6 +49,8 @@
 		2B3F95032B4D6F4A007B197A /* dateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateFormatter.swift; sourceTree = "<group>"; };
 		2B3F95082B4DDD58007B197A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2B3F950C2B4E8832007B197A /* TopSafeAreaColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSafeAreaColorModifier.swift; sourceTree = "<group>"; };
+		2B3F95132B4EB1DF007B197A /* shantaHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shantaHomeView.swift; sourceTree = "<group>"; };
+		2B3F95152B4EB6B7007B197A /* marketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marketView.swift; sourceTree = "<group>"; };
 		2BE2A2602B459A5700108588 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2BE2A2622B459A5700108588 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2BE2A2662B459B4E00108588 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -110,13 +114,55 @@
 			path = styling;
 			sourceTree = "<group>";
 		};
-		2BE2A25F2B459A5700108588 /* Home */ = {
+		2B3F950E2B4EB0B0007B197A /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				2BE2A25F2B459A5700108588 /* Home(BASE) */,
+				2B3F95122B4EB0D7007B197A /* shantaHomeTab */,
+				2B3F95112B4EB0D4007B197A /* market */,
+				2B3F95102B4EB0D1007B197A /* trade */,
+				2B3F950F2B4EB0CE007B197A /* services */,
+				2BE2A2612B459A5700108588 /* profile */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		2B3F950F2B4EB0CE007B197A /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		2B3F95102B4EB0D1007B197A /* trade */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = trade;
+			sourceTree = "<group>";
+		};
+		2B3F95112B4EB0D4007B197A /* market */ = {
+			isa = PBXGroup;
+			children = (
+				2B3F95152B4EB6B7007B197A /* marketView.swift */,
+			);
+			path = market;
+			sourceTree = "<group>";
+		};
+		2B3F95122B4EB0D7007B197A /* shantaHomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				2B3F95132B4EB1DF007B197A /* shantaHomeView.swift */,
+			);
+			path = shantaHomeTab;
+			sourceTree = "<group>";
+		};
+		2BE2A25F2B459A5700108588 /* Home(BASE) */ = {
 			isa = PBXGroup;
 			children = (
 				2BE2A2602B459A5700108588 /* HomeView.swift */,
-				2BE2A2612B459A5700108588 /* profile */,
 			);
-			path = Home;
+			path = "Home(BASE)";
 			sourceTree = "<group>";
 		};
 		2BE2A2612B459A5700108588 /* profile */ = {
@@ -152,7 +198,7 @@
 		2BE2A26F2B459D4F00108588 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2BE2A25F2B459A5700108588 /* Home */,
+				2B3F950E2B4EB0B0007B197A /* TabViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +355,8 @@
 				2B3F95002B4D44CD007B197A /* password recovery.swift in Sources */,
 				2B3F950B2B4DDD58007B197A /* Colors.swift in Sources */,
 				2BE2A2692B459B4E00108588 /* LoginView.swift in Sources */,
+				2B3F95162B4EB6B7007B197A /* marketView.swift in Sources */,
+				2B3F95142B4EB1DF007B197A /* shantaHomeView.swift in Sources */,
 				2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */,
 				2BE2A2632B459A5700108588 /* HomeView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
