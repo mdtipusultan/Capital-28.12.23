@@ -7,55 +7,267 @@
 //
 
 import SwiftUI
+
 struct shantaHomeView: View {
     
     var body: some View {
         NavigationView {
             
             //MARK: main-views
-            
-            VStack() {
-                NavigationLink(destination: password_recovery()) {
-                    HStack{
-                        Text("Balance")
-                            .foregroundColor(Color.black)
-                            .bold()
-                            
-                        Spacer()
-                        Image(systemName: "dollarsign.circle.fill") // Add your image here
-                                                    .resizable()
-                                                    .frame(width: 20, height: 20) // Adjust the size as needed
-                                                    .foregroundColor(.accentColor) // Adjust the color as needed
-
+            ScrollView{
+                VStack(spacing:20) {
+                    VStack {
+                        NavigationLink(destination: password_recovery()) {
+                            HStack{
+                                Text("Balance")
+                                    .foregroundColor(Color.black)
+                                    .bold()
+                                
+                                Spacer()
+                                Image(uiImage: UIImage(named: "next_page_arrow")!)
+                                    .resizable()
+                                    .frame(width: 8, height: 12)
+                                    .foregroundColor(.accentColor)
+                            }
+                        }
+                        
+                        
+                        
+                        Divider()
+                            .background(Color(red: 0.929, green: 0.929, blue: 0.929))
+                                                   .padding(.horizontal, -20)
+                                                   
+                                                                      
+                        
+                        HStack {
+                            Text("Available Balance")
+                                //.fontWeight(.medium)
+                                
+                            Spacer()
+                            Text("Row 2")
+                        }
+                        ColoredDivider(color: dividerColor, height: 1)
+                        
+                        HStack {
+                            Text("Current Balance")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                        ColoredDivider(color: dividerColor, height: 1)
+                        HStack {
+                            Text("Equtity")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                        
+                        ColoredDivider(color: dividerColor, height: 1)
+                        HStack {
+                            Text("Purchase Power")
+                            Spacer()
+                            Text("Row 2")
+                        }
                     }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 5) // Add shadow here
                     
-                }
-                
-                Divider()
-                
-                HStack {
-                    Text("Row 2")
-                    Spacer()
-                    Text("Row 2")
-                }
-                Divider()
-                HStack {
-                    Text("Row 2")
-                    Spacer()
-                    Text("Row 2")
-                }
-                Divider()
-                HStack {
-                    Text("Row 2")
-                    Spacer()
-                    Text("Row 2")
-                }
+                    VStack {
+                        NavigationLink(destination: password_recovery()) {
+                            HStack{
+                                Text("Position")
+                                    .foregroundColor(Color.black)
+                                    .bold()
+                                
+                                Spacer()
+                                Image(uiImage: UIImage(named: "next_page_arrow")!)
+                                    .resizable()
+                                    .frame(width: 8, height: 12)
+                                    .foregroundColor(.accentColor)
+                            }
+                        }
+                        
+                        Divider()
+                            .background(Color(red: 0.929, green: 0.929, blue: 0.929))
+                                                   .padding(.horizontal, -20)
+                        
+                        HStack {
+                            VStack{
+                                Text("ACI")
+                                Text("Market Price")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                                Text("Average Price")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                                    
+                            }
+                            
+                            Spacer()
+                            VStack{
+                                Text("500.00")
+                                Text("500.00")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                                Text("500.00")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        ColoredDivider(color: dividerColor, height: 1)
+                        HStack {
+                            VStack{
+                                Text("ACME")
+                                Text("Market Price")
+                                    .font(.caption)
+                                Text("Average Price")
+                            }
+                            
+                            Spacer()
+                            VStack{
+                                Text("500.00")
+                                Text("500.00")
+                                Text("500.00")
+                            }
+                        }
+                        
+                    }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 5) // Add shadow here
+                    
+                    VStack {//3rd vstack
+                        NavigationLink(destination: password_recovery()) {
+                            HStack{
+                                Text("Receivable")
+                                    .foregroundColor(Color.black)
+                                    .bold()
+                                
+                                Spacer()
+                                Image(uiImage: UIImage(named: "next_page_arrow")!)
+                                    .resizable()
+                                    .frame(width: 8, height: 12)
+                                    .foregroundColor(.accentColor)
+                            }
+                        }
+                        
+                        Divider()
+                            .background(Color(red: 0.929, green: 0.929, blue: 0.929))
+                                                   .padding(.horizontal, -20)
+                        
+                        HStack {
+                            Text("Row 2")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                        ColoredDivider(color: dividerColor, height: 1)
+                        HStack {
+                            Text("Row 2")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                        ColoredDivider(color: dividerColor, height: 1)
+                        HStack {
+                            Text("Row 2")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                    }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 5) // Add shadow here
+                    
+                    
+                    VStack {
+                        NavigationLink(destination: password_recovery()) {
+                            HStack{
+                                Text("Transaction")
+                                    .foregroundColor(Color.black)
+                                    .bold()
+                                
+                                Spacer()
+                                Image(uiImage: UIImage(named: "next_page_arrow")!)
+                                    .resizable()
+                                    .frame(width: 8, height: 12)
+                                    .foregroundColor(.accentColor)
+                            }
+                        }
+                        
+                        Divider()
+                            .background(Color(red: 0.929, green: 0.929, blue: 0.929))
+                                                   .padding(.horizontal, -20)
+                        
+                        HStack {
+                            Text("Row 2")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                        ColoredDivider(color: dividerColor, height: 1)
+                        HStack {
+                            Text("Row 2")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                        ColoredDivider(color: dividerColor, height: 1)
+                        HStack {
+                            Text("Row 2")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                    }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 5)
+                    
+                    VStack {
+                        NavigationLink(destination: password_recovery()) {
+                            HStack{
+                                Text("News")
+                                    .foregroundColor(Color.black)
+                                    .bold()
+                                
+                                Spacer()
+                                Image(uiImage: UIImage(named: "next_page_arrow")!)
+                                    .resizable()
+                                    .frame(width: 8, height: 12)
+                                    .foregroundColor(.accentColor)
+                            }
+                        }
+                        
+                        Divider()
+                            .background(Color(red: 0.929, green: 0.929, blue: 0.929))
+                                                   .padding(.horizontal, -20)
+                        
+                        HStack {
+                            Text("Row 2")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                        ColoredDivider(color: dividerColor, height: 1)
+                        HStack {
+                            Text("Row 2")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                        ColoredDivider(color: dividerColor, height: 1)
+                        HStack {
+                            Text("Row 2")
+                            Spacer()
+                            Text("Row 2")
+                        }
+                    }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 5) // Add shadow here
+                    
+                }//full-vstack
+                .padding(.top, 20)
+                .padding(.horizontal, 20)
             }
-            .padding()
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(radius: 5) // Add shadow here
-            
             
             
             //MARK: NAVBAR-ITEMS
@@ -76,10 +288,7 @@ struct shantaHomeView: View {
                     }
             )
             
-            
-            
         }//navigationview
-        
     }
 }
 
