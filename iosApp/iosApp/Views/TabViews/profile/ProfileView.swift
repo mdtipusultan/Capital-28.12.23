@@ -3,6 +3,7 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         NavigationView {
+            ScrollView {
             VStack(spacing: 20) {
                 // User Profile Row
                 UserProfileRow(image: "person.crop.circle.fill", userName: "Md. Momtajul Karim", accountCode: "F111", boId: "5678")
@@ -22,21 +23,20 @@ struct ProfileView: View {
                     }
                 
                 NavigationLink(destination: HomeView()) {
-                                SimpleTitleRow(title: "Portfolio Statement")
-                            }
-                            
-                            NavigationLink(destination: HomeView()) {
-                                SimpleTitleRow(title: "Ledger Statement")
-                            }
+                    SimpleTitleRow(title: "Portfolio Statement")
+                }
+                
+                NavigationLink(destination: HomeView()) {
+                    SimpleTitleRow(title: "Ledger Statement")
+                }
                 
                 // Logout Row
                 LogoutRow()
                 // Spacer to push content to the top
-                             Spacer()
+                Spacer()
             }
             
             .padding()
-            
             .navigationBarTitle("Profile", displayMode: .inline)
             .navigationBarItems(
                 leading:
@@ -54,7 +54,7 @@ struct ProfileView: View {
                     }
             )
         }
-       
+    }
     }
 }
 
@@ -73,10 +73,10 @@ struct UserProfileRow: View {
                 Text(userName)
                     .font(.headline)
                 
-                    Text("Account Code: \(accountCode)")
-                    Text("BO ID: \(boId)")
+                Text("Account Code: \(accountCode)")
+                Text("BO ID: \(boId)")
                 
-                .font(.subheadline)
+                    .font(.subheadline)
             }
             Spacer()
         }
@@ -87,28 +87,95 @@ struct UserProfileRow: View {
         .shadow(radius: 5)
     }
 }
+/*
+ struct TitleRow: View {
+ var title: String
+ var description: String
+ 
+ var body: some View {
+ HStack {
+ Text(title)
+ .font(.headline)
+ Spacer()
+ Image(systemName: "chevron.down")
+ }
+ .padding()
+ .background(Color.white)
+ .cornerRadius(10)
+ .shadow(radius: 5)
+ .onTapGesture {
+ // Handle tap action for other rows if needed
+ print(description)
+ }
+ }
+ }
+ */
+
+
 
 struct TitleRow: View {
     var title: String
     var description: String
     
+    @State private var isExpanded: Bool = false
+    
     var body: some View {
-        HStack {
-            Text(title)
-                .font(.headline)
-            Spacer()
-            Image(systemName: "chevron.down")
-        }
-        .padding()
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 5)
-        .onTapGesture {
-            // Handle tap action for other rows if needed
-            print(description)
+        VStack(alignment: .leading, spacing: 0) {
+            HStack {
+                Text(title)
+                    .font(.headline)
+                Spacer()
+                Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+            }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(radius: 5)
+            .onTapGesture {
+                isExpanded.toggle()
+            }
+            
+            if isExpanded {
+                // Description
+                Text(description)
+                    .padding()
+                
+                // Additional rows with data
+                HStack {
+                    Text("Available Balance")
+                    Spacer()
+                    Text("Row 2")
+                }
+                ColoredDivider(color: .black, height: 1)
+                
+                HStack {
+                    Text("Current Balance")
+                    Spacer()
+                    Text("Row 2")
+                }
+                ColoredDivider(color: .black, height: 1)
+                
+                HStack {
+                    Text("Equity")
+                    Spacer()
+                    Text("Row 2")
+                }
+                ColoredDivider(color: .black, height: 1)
+                
+                HStack {
+                    Text("Purchase Power")
+                    Spacer()
+                    Text("Row 2")
+                }
+            }
         }
     }
 }
+
+
+
+
+
 struct SimpleTitleRow: View {
     var title: String
     
