@@ -35,14 +35,14 @@ struct shantaHomeView: View {
                         
                         Divider()
                             .background(Color(red: 0.929, green: 0.929, blue: 0.929))
-                                                   .padding(.horizontal, -20)
-                                                   
-                                                                      
+                            .padding(.horizontal, -20)
+                        
+                        
                         
                         HStack {
                             Text("Available Balance")
-                                //.fontWeight(.medium)
-                                
+                            //.fontWeight(.medium)
+                            
                             Spacer()
                             Text("Row 2")
                         }
@@ -89,7 +89,7 @@ struct shantaHomeView: View {
                         
                         Divider()
                             .background(Color(red: 0.929, green: 0.929, blue: 0.929))
-                                                   .padding(.horizontal, -20)
+                            .padding(.horizontal, -20)
                         
                         HStack {
                             VStack{
@@ -100,7 +100,7 @@ struct shantaHomeView: View {
                                 Text("Average Price")
                                     .font(.caption)
                                     .foregroundColor(.gray)
-                                    
+                                
                             }
                             
                             Spacer()
@@ -154,7 +154,7 @@ struct shantaHomeView: View {
                         
                         Divider()
                             .background(Color(red: 0.929, green: 0.929, blue: 0.929))
-                                                   .padding(.horizontal, -20)
+                            .padding(.horizontal, -20)
                         
                         HStack {
                             Text("Row 2")
@@ -197,7 +197,7 @@ struct shantaHomeView: View {
                         
                         Divider()
                             .background(Color(red: 0.929, green: 0.929, blue: 0.929))
-                                                   .padding(.horizontal, -20)
+                            .padding(.horizontal, -20)
                         
                         HStack {
                             Text("Row 2")
@@ -239,7 +239,7 @@ struct shantaHomeView: View {
                         
                         Divider()
                             .background(Color(red: 0.929, green: 0.929, blue: 0.929))
-                                                   .padding(.horizontal, -20)
+                            .padding(.horizontal, -20)
                         
                         HStack {
                             Text("Row 2")
