@@ -13,8 +13,6 @@ struct shantaHomeView: View {
     var body: some View {
         NavigationView {
             
-            
-            
             //MARK: main-views
             ScrollView{
                 VStack(spacing:20) {

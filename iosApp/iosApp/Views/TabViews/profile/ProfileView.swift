@@ -1,51 +1,149 @@
-//
-//  ProfileView.swift
-//  iosApp
-//
-//  Created by LEADS Corporation Limited on 25/12/23.
-//  Copyright © 2023 orgName. All rights reserved.
-//
-
 import SwiftUI
 
 struct ProfileView: View {
-    let options = ["Option 1", "Option 2", "Option 3", "Option 4"]
-
     var body: some View {
         NavigationView {
-            List {
-                // First Row
-                HStack {
-                    Image(systemName: "person.circle")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                    VStack(alignment: .leading) {
-                        Text("Your Name")
-                            .font(.headline)
-                        Text("Your ID")
-                            .font(.subheadline)
-                    }
-                    Spacer()
-                }
+            VStack(spacing: 20) {
+                // User Profile Row
+                UserProfileRow(image: "person.crop.circle.fill", userName: "Md. Momtajul Karim", accountCode: "F111", boId: "5678")
                 
-                // Other Rows
-                ForEach(options, id: \.self) { option in
-                    Text(option)
-                }
+                
+                // 5 Different Rows with Titles
+                TitleRow(title: "Balances", description: "Description for Row....")
+                    .onTapGesture {
+                        // Show description for Row 1
+                        print("Description for Row 1")
+                    }
+                
+                TitleRow(title: "Position", description: "Description for Row 2")
+                    .onTapGesture {
+                        // Show description for Row 2
+                        print("Description for Row 2")
+                    }
+                
+                NavigationLink(destination: HomeView()) {
+                                SimpleTitleRow(title: "Portfolio Statement")
+                            }
+                            
+                            NavigationLink(destination: HomeView()) {
+                                SimpleTitleRow(title: "Ledger Statement")
+                            }
+                
+                // Logout Row
+                LogoutRow()
+                // Spacer to push content to the top
+                             Spacer()
             }
-            .listStyle(GroupedListStyle())
             
-            .navigationBarTitle("Profile")
-                .navigationBarTitle("Profile", displayMode: .inline)
-                .background(Color.purple)
+            .padding()
+            
+            .navigationBarTitle("Profile", displayMode: .inline)
+            .navigationBarItems(
+                leading:
+                    Button(action: {
+                        // Handle action for the first button
+                    }) {
+                        Image(uiImage: UIImage(named: "loading_nav_button")!)
+                    },
+                trailing:
+                    Button(action: {
+                        // Handle action for the second button
+                    }) {
+                        Image(uiImage: UIImage(named: "alarm_nav_button")!)
+                        
+                    }
+            )
         }
-        
+       
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct UserProfileRow: View {
+    var image: String
+    var userName: String
+    var accountCode: String
+    var boId: String
+    
+    var body: some View {
+        HStack {
+            Image(systemName: image)
+                .resizable()
+                .frame(width: 50, height: 50)
+            VStack(alignment: .leading) {
+                Text(userName)
+                    .font(.headline)
+                
+                    Text("Account Code: \(accountCode)")
+                    Text("BO ID: \(boId)")
+                
+                .font(.subheadline)
+            }
+            Spacer()
+        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(10)
+        .padding(.top, 20)
+        .shadow(radius: 5)
+    }
+}
+
+struct TitleRow: View {
+    var title: String
+    var description: String
+    
+    var body: some View {
+        HStack {
+            Text(title)
+                .font(.headline)
+            Spacer()
+            Image(systemName: "chevron.down")
+        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
+        .onTapGesture {
+            // Handle tap action for other rows if needed
+            print(description)
+        }
+    }
+}
+struct SimpleTitleRow: View {
+    var title: String
+    
+    var body: some View {
+        HStack {
+            Text(title)
+                .font(.headline)
+            Spacer()
+            Image(systemName: "chevron.right")
+        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
+    }
+}
+struct LogoutRow: View {
+    var body: some View {
+        HStack {
+            Text("Logout")
+                .font(.headline)
+                .foregroundColor(.red)
+            Spacer()
+            Image(systemName: "power")
+        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(10)
+        .padding(.bottom, 20)
+        .shadow(radius: 5)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
     }
 }
-
