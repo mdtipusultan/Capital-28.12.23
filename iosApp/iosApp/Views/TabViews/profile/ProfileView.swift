@@ -105,10 +105,12 @@ struct UserProfileRow: View {
                     Image(uiImage: selectedImage)
                         .resizable()
                         .frame(width: 50, height: 50)
+                        .clipShape(Circle()) // Apply circular clipping mask
                 } else {
                     Image(systemName: image)
                         .resizable()
                         .frame(width: 50, height: 50)
+                        .clipShape(Circle()) // Apply circular clipping mask
                 }
             }
             .sheet(isPresented: $isImagePickerPresented) {
