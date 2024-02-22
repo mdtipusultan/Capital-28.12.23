@@ -56,37 +56,7 @@ struct ProfileView: View {
         }
     }
 }
-/*
-struct UserProfileRow: View {
-    var image: String
-    var userName: String
-    var accountCode: String
-    var boId: String
-    
-    var body: some View {
-        HStack {
-            Image(systemName: image)
-                .resizable()
-                .frame(width: 50, height: 50)
-            VStack(alignment: .leading) {
-                Text(userName)
-                    .font(.headline)
-                
-                Text("Account Code: \(accountCode)")
-                Text("BO ID: \(boId)")
-                
-                    .font(.subheadline)
-            }
-            Spacer()
-        }
-        .padding()
-        .background(Color.white)
-        .cornerRadius(10)
-        .padding(.top, 20)
-        .shadow(radius: 5)
-    }
-}
-*/
+
 struct UserProfileRow: View {
     var image: String
     var userName: String

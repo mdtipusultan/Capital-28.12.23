@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-
 struct shantaHomeView: View {
     
     var body: some View {
@@ -31,12 +30,9 @@ struct shantaHomeView: View {
                             }
                         }
                         
-                        
-                        
                         Divider()
                             .background(Color(red: 0.929, green: 0.929, blue: 0.929))
                             .padding(.horizontal, -20)
-                        
                         
                         
                         HStack {
@@ -106,10 +102,10 @@ struct shantaHomeView: View {
                             Spacer()
                             VStack{
                                 Text("500.00")
-                                Text("500.00")
+                                Text("800.00")
                                     .font(.caption)
                                     .foregroundColor(.gray)
-                                Text("500.00")
+                                Text("800.00")
                                     .font(.caption)
                                     .foregroundColor(.gray)
                             }
@@ -120,14 +116,21 @@ struct shantaHomeView: View {
                                 Text("ACME")
                                 Text("Market Price")
                                     .font(.caption)
+                                    .foregroundColor(.gray)
                                 Text("Average Price")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
                             }
                             
                             Spacer()
                             VStack{
                                 Text("500.00")
-                                Text("500.00")
-                                Text("500.00")
+                                Text("800.00")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                                Text("800.00")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
                             }
                         }
                         
@@ -157,22 +160,58 @@ struct shantaHomeView: View {
                             .padding(.horizontal, -20)
                         
                         HStack {
-                            Text("Row 2")
+                            Text("Right Share Receivable")
+                                .foregroundColor(Color.black)
+                                .bold()
                             Spacer()
-                            Text("Row 2")
+                        }
+                        HStack {
+                            Text("")
+                        }
+                        HStack {
+                            Text("AL-HAJTEX")
+                                .foregroundColor(.gray)
+                            Spacer()
+                            Text("100.00 @ 0.00")
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                        }
+                        HStack {
+                            Text("AL-HAJTEX")
+                                .foregroundColor(.gray)
+                            Spacer()
+                            Text("50.00 @ 0.00")
+                                .font(.caption)
+                                .foregroundColor(.gray)
                         }
                         ColoredDivider(color: dividerColor, height: 1)
+                        
                         HStack {
-                            Text("Row 2")
+                            Text("Cash Dividend Receivable")
+                                .foregroundColor(Color.black)
+                                .bold()
                             Spacer()
-                            Text("Row 2")
                         }
-                        ColoredDivider(color: dividerColor, height: 1)
                         HStack {
-                            Text("Row 2")
-                            Spacer()
-                            Text("Row 2")
+                            Text("")
                         }
+                        HStack {
+                            Text("ACI")
+                                .foregroundColor(.gray)
+                            Spacer()
+                            Text("0.00 @ 22,000.00")
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                        }
+                        HStack {
+                            Text("ACI")
+                                .foregroundColor(.gray)
+                            Spacer()
+                            Text("0.00 @ 22,000.00")
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                        }
+                       
                     }
                     .padding()
                     .background(Color.white)
@@ -200,22 +239,75 @@ struct shantaHomeView: View {
                             .padding(.horizontal, -20)
                         
                         HStack {
-                            Text("Row 2")
+                            Text("Cash Deposit")
+                                .foregroundColor(Color.black)
+                                .bold()
                             Spacer()
-                            Text("Row 2")
+                            
+                            Text("-20,000.00")
+                                .foregroundColor(Color.red)
+                                .bold()
+                        }
+                        HStack {
+                            Text("")
+                        }
+                        HStack {
+                            Text("15-jun-2023")
+                                .foregroundColor(.gray)
+                            Spacer()
                         }
                         ColoredDivider(color: dividerColor, height: 1)
+                        
                         HStack {
-                            Text("Row 2")
+                            Text("cdbl charge Ac opening (own)")
+                                .foregroundColor(Color.black)
+                                .bold()
                             Spacer()
-                            Text("Row 2")
+                            
+                            Text("+500.00")
+                                .foregroundColor(Color.green)
+                                .bold()
+                        }
+                        HStack {
+                            Text("")
+                        }
+                        HStack {
+                            Text("15-jun-2023")
+                                .foregroundColor(.gray)
+                            Spacer()
                         }
                         ColoredDivider(color: dividerColor, height: 1)
+                        
                         HStack {
-                            Text("Row 2")
+                            Text("BUY - ABBANK")
+                                .foregroundColor(Color.black)
+                                .bold()
                             Spacer()
-                            Text("Row 2")
+                            
+                            Text("+7,575.00")
+                                .foregroundColor(Color.green)
+                                .bold()
                         }
+                        HStack {
+                            Text("")
+                        }
+                        
+                        HStack {
+                            Text("SubAPSCL NonConvertIABLE and Fully Redeemable Couphead")
+                                .foregroundColor(.gray)
+                            Spacer()
+                            Text("500 @ 15")
+                                .foregroundColor(.gray)
+                        }
+                        HStack {
+                            Text("")
+                        }
+                        HStack {
+                            Text("15-jun-2023")
+                                .foregroundColor(.gray)
+                            Spacer()
+                        }
+                        
                     }
                     .padding()
                     .background(Color.white)
