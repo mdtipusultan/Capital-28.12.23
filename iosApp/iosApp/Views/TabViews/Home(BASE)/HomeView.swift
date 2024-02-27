@@ -19,7 +19,9 @@ struct HomeView: View {
                 Image(uiImage: UIImage(named: "home")!)
             }
             
-            marketView()
+            NavigationView {
+                           marketView() // Wrap marketView inside NavigationView
+                       }
             .tabItem {
                 //Image(systemName: "2.circle")
                 Image(uiImage: UIImage(named: "market")!)
@@ -36,22 +38,19 @@ struct HomeView: View {
             }
             
             NavigationView {
-                Text("4th Tab")
-                    .multilineTextAlignment(.trailing)
-                    .navigationBarTitle("Forth", displayMode: .inline)
-                    .background(Color.yellow) // Set the navigation bar color
+                ServicesView()
             }
             .tabItem {
                 //Image(systemName: "4.circle")
                 Image(uiImage: UIImage(named: "Services")!)
             }
-         
-            ProfileView()
             
-            .tabItem {
-                //Image(systemName: "person")
-                Image(uiImage: UIImage(named: "profile")!)
-            }
+            ProfileView()
+                          .tabItem {
+                              Image(uiImage: UIImage(named: "profile")!)
+                          }
+            
+
         }
         //tabbar image color
         .accentColor(appColor)

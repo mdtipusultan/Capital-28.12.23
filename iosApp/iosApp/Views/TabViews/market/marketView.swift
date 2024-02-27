@@ -12,33 +12,32 @@ struct marketView: View {
     @State private var showAlert = false
     
     var body: some View {
-        NavigationView {
-            Text("market")
-                .navigationBarTitle("Market", displayMode: .inline)
-                .background(Color.green)
-                .navigationBarItems(
-                                    leading: Button(action: {
-                                        // Action for the first button
-                                    }) {
-                                        Text("Button 1")
-                                    },
-                                    trailing: HStack {
-                                        Button(action: {
-                                            // Action for the second button
-                                            self.showAlert.toggle()
-                                        }) {
-                                            Image(systemName: "gear")
-                                        }
-                                        Button(action: {
-                                            // Action for another button
-                                        }) {
-                                            Image(systemName: "plus")
-                                        }
-                                    }
-                                    )
-        }
+        Text("market")
+            .navigationBarTitle("Market", displayMode: .inline)
+            .background(Color.green)
+            .navigationBarItems(
+                leading: Button(action: {
+                    // Action for the first button
+                }) {
+                    Text("Button 1")
+                },
+                trailing: HStack {
+                    Button(action: {
+                        // Action for the second button
+                        self.showAlert.toggle()
+                    }) {
+                        Image(systemName: "gear")
+                    }
+                    Button(action: {
+                        // Action for another button
+                    }) {
+                        Image(systemName: "plus")
+                    }
+                }
+            )
     }
 }
+
 
 #Preview {
     marketView()

@@ -19,6 +19,7 @@
 		2B3F95142B4EB1DF007B197A /* shantaHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95132B4EB1DF007B197A /* shantaHomeView.swift */; };
 		2B3F95162B4EB6B7007B197A /* marketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95152B4EB6B7007B197A /* marketView.swift */; };
 		2B8E1B162B85FB820097A6D6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E1B152B85FB820097A6D6 /* ImagePicker.swift */; };
+		2B8E1B182B89F17B0097A6D6 /* services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E1B172B89F17A0097A6D6 /* services.swift */; };
 		2BE2A2632B459A5700108588 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2602B459A5700108588 /* HomeView.swift */; };
 		2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2622B459A5700108588 /* ProfileView.swift */; };
 		2BE2A2682B459B4E00108588 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2662B459B4E00108588 /* RegistrationView.swift */; };
@@ -53,6 +54,7 @@
 		2B3F95132B4EB1DF007B197A /* shantaHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shantaHomeView.swift; sourceTree = "<group>"; };
 		2B3F95152B4EB6B7007B197A /* marketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marketView.swift; sourceTree = "<group>"; };
 		2B8E1B152B85FB820097A6D6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		2B8E1B172B89F17A0097A6D6 /* services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = services.swift; sourceTree = "<group>"; };
 		2BE2A2602B459A5700108588 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2BE2A2622B459A5700108588 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2BE2A2662B459B4E00108588 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		2B3F950F2B4EB0CE007B197A /* services */ = {
 			isa = PBXGroup;
 			children = (
+				2B8E1B172B89F17A0097A6D6 /* services.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */,
 				2BE2A2632B459A5700108588 /* HomeView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				2B8E1B182B89F17B0097A6D6 /* services.swift in Sources */,
 				2B3F94FC2B4917EB007B197A /* BiometricAuthView.swift in Sources */,
 				2B3F95022B4D6F2B007B197A /* Helper.swift in Sources */,
 				2B8E1B162B85FB820097A6D6 /* ImagePicker.swift in Sources */,

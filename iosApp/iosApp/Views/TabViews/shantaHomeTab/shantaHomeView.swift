@@ -334,22 +334,49 @@ struct shantaHomeView: View {
                             .padding(.horizontal, -20)
                         
                         HStack {
-                            Text("Row 2")
+                            Text("ABBANK: Weekly NAV")
+                                .foregroundColor(Color.black)
+                                .bold()
                             Spacer()
-                            Text("Row 2")
+                        }
+                        HStack {
+                            Text("")
+                        }
+                        HStack {
+                            Text("SubAPSCL NonConvertIABLE and Fully Redeemable Couphead SubAPSCL NonConvertIABLE and Fully Redeemable Couphead SubAPSCL NonConvertIABLE and Fully Redeemable Couphead")
+                                .foregroundColor(.gray)
+                        }
+                        HStack {
+                            Text("")
+                        }
+                        HStack {
+                            Text("15-jun-2023")
+                                .foregroundColor(.gray)
+                            Spacer()
                         }
                         ColoredDivider(color: dividerColor, height: 1)
                         HStack {
-                            Text("Row 2")
+                            Text("ACI: Dividend Disbursement")
+                                .foregroundColor(Color.black)
+                                .bold()
                             Spacer()
-                            Text("Row 2")
                         }
-                        ColoredDivider(color: dividerColor, height: 1)
                         HStack {
-                            Text("Row 2")
-                            Spacer()
-                            Text("Row 2")
+                            Text("")
                         }
+                        HStack {
+                            Text("SubAPSCL NonConvertIABLE and Fully Redeemable Couphead SubAPSCL NonConvertIABLE and Fully Redeemable Couphead SubAPSCL NonConvertIABLE and Fully Redeemable Couphead")
+                                .foregroundColor(.gray)
+                        }
+                        HStack {
+                            Text("")
+                        }
+                        HStack {
+                            Text("15-jun-2023")
+                                .foregroundColor(.gray)
+                            Spacer()
+                        }
+                       
                     }
                     .padding()
                     .background(Color.white)

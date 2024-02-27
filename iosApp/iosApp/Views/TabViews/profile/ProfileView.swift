@@ -21,11 +21,11 @@ struct ProfileView: View {
                             print("Description for Row 2")
                         }
                     
-                    NavigationLink(destination: HomeView()) {
+                    NavigationLink(destination: marketView()) {
                         SimpleTitleRow(title: "Portfolio Statement")
                     }
                     
-                    NavigationLink(destination: HomeView()) {
+                    NavigationLink(destination: marketView()) {
                         SimpleTitleRow(title: "Ledger Statement")
                     }
                     
@@ -56,6 +56,7 @@ struct ProfileView: View {
         }
     }
 }
+
 
 struct UserProfileRow: View {
     var image: String
