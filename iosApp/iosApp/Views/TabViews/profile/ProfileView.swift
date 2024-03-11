@@ -7,7 +7,7 @@ struct ProfileView: View {
                 VStack(spacing: 20) {
                     // User Profile Row
                     UserProfileRow(image: "person.crop.circle.fill", userName: "Md. Momtajul Karim", accountCode: "F111", boId: "5678")
-                                        
+                    
                     // 5 Different Rows with Titles
                     TitleRow(title: "Balances")
                         .onTapGesture {

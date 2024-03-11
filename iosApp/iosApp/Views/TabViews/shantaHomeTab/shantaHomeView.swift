@@ -7,14 +7,20 @@
 //
 
 import SwiftUI
+
 struct shantaHomeView: View {
+    // Define arrays for news titles, details, and dates
+    let newsTitles = ["ABBANK: Weekly NAV", "ACI: Dividend Disbursement"]
+    let newsDetails = [
+        "SubAPSCL NonConvertible and Fully Redeemable Couphead SubAPSCL NonConvertible and Fully Redeemable Couphead SubAPSCL NonConvertible and Fully Redeemable Couphead",
+        "SubAPSCL NonConvertible and Fully Redeemable Couphead SubAPSCL NonConvertible and Fully Redeemable Couphead SubAPSCL NonConvertible and Fully Redeemable Couphead"
+    ]
+    let newsDates = ["15-jun-2023", "15-jun-2023"]
     
     var body: some View {
         NavigationView {
-            
-            //MARK: main-views
-            ScrollView{
-                VStack(spacing:20) {
+            ScrollView {
+                VStack(spacing: 20) {
                     VStack {
                         NavigationLink(destination: password_recovery()) {
                             HStack{
@@ -33,7 +39,6 @@ struct shantaHomeView: View {
                         Divider()
                             .background(Color(red: 0.929, green: 0.929, blue: 0.929))
                             .padding(.horizontal, -20)
-                        
                         
                         HStack {
                             Text("Available Balance")
@@ -216,8 +221,7 @@ struct shantaHomeView: View {
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
-                    .shadow(radius: 5) // Add shadow here
-                    
+                    .shadow(radius: 5)
                     
                     VStack {
                         NavigationLink(destination: password_recovery()) {
@@ -314,6 +318,7 @@ struct shantaHomeView: View {
                     .cornerRadius(10)
                     .shadow(radius: 5)
                     
+                    // News Section
                     VStack {
                         NavigationLink(destination: password_recovery()) {
                             HStack{
@@ -333,63 +338,46 @@ struct shantaHomeView: View {
                             .background(Color(red: 0.929, green: 0.929, blue: 0.929))
                             .padding(.horizontal, -20)
                         
-                        HStack {
-                            Text("ABBANK: Weekly NAV")
-                                .foregroundColor(Color.black)
-                                .bold()
-                            Spacer()
+                        // Iterate over the news arrays to populate the news section dynamically
+                        ForEach(0..<newsTitles.count) { index in
+                            VStack {
+                                HStack {
+                                    Text(self.newsTitles[index])
+                                        .foregroundColor(Color.black)
+                                        .bold()
+                                    Spacer()
+                                }
+                                HStack {
+                                    Text("")
+                                }
+                                HStack {
+                                    Text(self.newsDetails[index])
+                                        .foregroundColor(.gray)
+                                }
+                                HStack {
+                                    Text("")
+                                }
+                                HStack {
+                                    Text(self.newsDates[index])
+                                        .foregroundColor(.gray)
+                                    Spacer()
+                                }
+                            }
+                           
+                            // Add divider only if it's not the last news item
+                            if index != self.newsTitles.count - 1 {
+                                ColoredDivider(color: dividerColor, height: 1)
+                            }
                         }
-                        HStack {
-                            Text("")
-                        }
-                        HStack {
-                            Text("SubAPSCL NonConvertIABLE and Fully Redeemable Couphead SubAPSCL NonConvertIABLE and Fully Redeemable Couphead SubAPSCL NonConvertIABLE and Fully Redeemable Couphead")
-                                .foregroundColor(.gray)
-                        }
-                        HStack {
-                            Text("")
-                        }
-                        HStack {
-                            Text("15-jun-2023")
-                                .foregroundColor(.gray)
-                            Spacer()
-                        }
-                        ColoredDivider(color: dividerColor, height: 1)
-                        HStack {
-                            Text("ACI: Dividend Disbursement")
-                                .foregroundColor(Color.black)
-                                .bold()
-                            Spacer()
-                        }
-                        HStack {
-                            Text("")
-                        }
-                        HStack {
-                            Text("SubAPSCL NonConvertIABLE and Fully Redeemable Couphead SubAPSCL NonConvertIABLE and Fully Redeemable Couphead SubAPSCL NonConvertIABLE and Fully Redeemable Couphead")
-                                .foregroundColor(.gray)
-                        }
-                        HStack {
-                            Text("")
-                        }
-                        HStack {
-                            Text("15-jun-2023")
-                                .foregroundColor(.gray)
-                            Spacer()
-                        }
-                       
                     }
                     .padding()
                     .background(Color.white)
                     .cornerRadius(10)
-                    .shadow(radius: 5) // Add shadow here
-                    
+                    .shadow(radius: 5)
                 }//full-vstack
                 .padding(.top, 20)
                 .padding(.horizontal, 20)
             }
-            
-            
-            //MARK: NAVBAR-ITEMS
             .navigationBarTitle("SHANTA", displayMode: .inline)
             .navigationBarItems(
                 leading:
@@ -403,10 +391,8 @@ struct shantaHomeView: View {
                         // Handle action for the second button
                     }) {
                         Image(uiImage: UIImage(named: "alarm_nav_button")!)
-                        
                     }
             )
-            
         }//navigationview
     }
 }

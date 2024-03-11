@@ -14,22 +14,21 @@ struct HomeView: View {
         
         TabView {
             shantaHomeView()
-            .tabItem {
-                //Image(systemName: "house.fill")
-                Image(uiImage: UIImage(named: "home")!)
-            }
+                .tabItem {
+                    //Image(systemName: "house.fill")
+                    Image(uiImage: UIImage(named: "home")!)
+                }
+            
+            
+            marketView()
+                .tabItem {
+                    //Image(systemName: "2.circle")
+                    Image(uiImage: UIImage(named: "market")!)
+                }
             
             NavigationView {
-                           marketView() // Wrap marketView inside NavigationView
-                       }
-            .tabItem {
-                //Image(systemName: "2.circle")
-                Image(uiImage: UIImage(named: "market")!)
-            }
-            
-            NavigationView {
-                Text("Third Tab")
-                    .navigationBarTitle("Third", displayMode: .inline)
+                Text("Trade")
+                    .navigationBarTitle("Trade", displayMode: .inline)
                     .background(Color.yellow) // Set the navigation bar color
             }
             .tabItem {
@@ -46,17 +45,17 @@ struct HomeView: View {
             }
             
             ProfileView()
-                          .tabItem {
-                              Image(uiImage: UIImage(named: "profile")!)
-                          }
+                .tabItem {
+                    Image(uiImage: UIImage(named: "profile")!)
+                }
             
-
+            
         }
         //tabbar image color
         .accentColor(appColor)
         .topSafeAreaColor()
     }
-        
+    
     
 }
 
