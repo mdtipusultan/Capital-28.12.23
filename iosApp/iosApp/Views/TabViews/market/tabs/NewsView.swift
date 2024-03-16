@@ -18,42 +18,44 @@ struct NewsView: View {
     let dates = ["15-jun-2023", "15-jun-2023"]
     
     var body: some View {
-        VStack(spacing: 20) {
-            // Iterate over the arrays to populate the NewsView
-            ForEach(0..<titles.count) { index in
-                VStack {
-                    HStack {
-                        Text(self.titles[index])
-                            .foregroundColor(Color.black)
-                            .bold()
-                        Spacer()
+        ScrollView {
+            VStack(spacing: 20) {
+                // Iterate over the arrays to populate the NewsView
+                ForEach(0..<titles.count) { index in
+                    VStack {
+                        HStack {
+                            Text(self.titles[index])
+                                .foregroundColor(Color.black)
+                                .bold()
+                            Spacer()
+                        }
+                        HStack {
+                            Text("")
+                        }
+                        HStack {
+                            Text(self.details[index])
+                                .foregroundColor(.gray)
+                            Spacer()
+                        }
+                        HStack {
+                            Text("")
+                        }
+                        HStack {
+                            Text(self.dates[index])
+                                .foregroundColor(.gray)
+                            Spacer()
+                        }
                     }
-                    HStack {
-                        Text("")
-                    }
-                    HStack {
-                        Text(self.details[index])
-                            .foregroundColor(.gray)
-                        Spacer()
-                    }
-                    HStack {
-                        Text("")
-                    }
-                    HStack {
-                        Text(self.dates[index])
-                            .foregroundColor(.gray)
-                        Spacer()
-                    }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 5)
                 }
-                .padding()
-                .background(Color.white)
-                .cornerRadius(10)
-                .shadow(radius: 5)
+                
+                Spacer() // Add space at the bottom
             }
-            
-            Spacer() // Add space at the bottom
+            .padding(.horizontal, 20) // Add 20 space at the right
         }
-        .padding(.horizontal, 20) // Add 20 space at the right
     }
 }
 
@@ -62,4 +64,3 @@ struct NewsView_Previews: PreviewProvider {
         NewsView()
     }
 }
-
