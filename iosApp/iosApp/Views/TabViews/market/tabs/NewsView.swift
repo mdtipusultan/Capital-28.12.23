@@ -50,12 +50,15 @@ struct NewsView: View {
                     .background(Color.white)
                     .cornerRadius(10)
                     .shadow(radius: 5)
+                    // Add additional padding only to the first row
+                    .padding(.top, index == 0 ? 10 : 0)
                 }
                 
                 Spacer() // Add space at the bottom
             }
             .padding(.horizontal, 20) // Add 20 space at the right
         }
+        .padding(.top, 10) // Add 10 space on top
     }
 }
 
