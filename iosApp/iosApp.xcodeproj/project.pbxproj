@@ -25,6 +25,8 @@
 		2B3F95162B4EB6B7007B197A /* marketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F95152B4EB6B7007B197A /* marketView.swift */; };
 		2B8E1B162B85FB820097A6D6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E1B152B85FB820097A6D6 /* ImagePicker.swift */; };
 		2B8E1B182B89F17B0097A6D6 /* services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E1B172B89F17A0097A6D6 /* services.swift */; };
+		2B99DF3C2BC39D7300AB069F /* Protfolio statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99DF3B2BC39D7200AB069F /* Protfolio statement.swift */; };
+		2B99DF3E2BC39F7000AB069F /* Ledger Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99DF3D2BC39F7000AB069F /* Ledger Statement.swift */; };
 		2BE2A2632B459A5700108588 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2602B459A5700108588 /* HomeView.swift */; };
 		2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2622B459A5700108588 /* ProfileView.swift */; };
 		2BE2A2682B459B4E00108588 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2662B459B4E00108588 /* RegistrationView.swift */; };
@@ -64,6 +66,8 @@
 		2B3F95152B4EB6B7007B197A /* marketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marketView.swift; sourceTree = "<group>"; };
 		2B8E1B152B85FB820097A6D6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2B8E1B172B89F17A0097A6D6 /* services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = services.swift; sourceTree = "<group>"; };
+		2B99DF3B2BC39D7200AB069F /* Protfolio statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protfolio statement.swift"; sourceTree = "<group>"; };
+		2B99DF3D2BC39F7000AB069F /* Ledger Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ledger Statement.swift"; sourceTree = "<group>"; };
 		2BE2A2602B459A5700108588 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2BE2A2622B459A5700108588 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2BE2A2662B459B4E00108588 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -192,6 +196,47 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		2B99DF3A2BC3987C00AB069F /* otherViews */ = {
+			isa = PBXGroup;
+			children = (
+				2B99DF412BC3A07E00AB069F /* LedgerStatement */,
+				2B99DF3F2BC3A04600AB069F /* ProtfolioStatement */,
+			);
+			path = otherViews;
+			sourceTree = "<group>";
+		};
+		2B99DF3F2BC3A04600AB069F /* ProtfolioStatement */ = {
+			isa = PBXGroup;
+			children = (
+				2B99DF402BC3A06300AB069F /* tabs */,
+				2B99DF3B2BC39D7200AB069F /* Protfolio statement.swift */,
+			);
+			path = ProtfolioStatement;
+			sourceTree = "<group>";
+		};
+		2B99DF402BC3A06300AB069F /* tabs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tabs;
+			sourceTree = "<group>";
+		};
+		2B99DF412BC3A07E00AB069F /* LedgerStatement */ = {
+			isa = PBXGroup;
+			children = (
+				2B99DF422BC3A0B900AB069F /* tabs */,
+				2B99DF3D2BC39F7000AB069F /* Ledger Statement.swift */,
+			);
+			path = LedgerStatement;
+			sourceTree = "<group>";
+		};
+		2B99DF422BC3A0B900AB069F /* tabs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tabs;
+			sourceTree = "<group>";
+		};
 		2BE2A25F2B459A5700108588 /* Home(BASE) */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +277,7 @@
 		2BE2A26F2B459D4F00108588 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2B99DF3A2BC3987C00AB069F /* otherViews */,
 				2B3F950E2B4EB0B0007B197A /* TabViews */,
 			);
 			path = Views;
@@ -396,6 +442,7 @@
 				2B07F7972B9EE11B00210CC0 /* StocksView.swift in Sources */,
 				2B07F7992B9EE14400210CC0 /* WatchlistView.swift in Sources */,
 				2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */,
+				2B99DF3E2BC39F7000AB069F /* Ledger Statement.swift in Sources */,
 				2BE2A2632B459A5700108588 /* HomeView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				2B8E1B182B89F17B0097A6D6 /* services.swift in Sources */,
@@ -405,6 +452,7 @@
 				2B8E1B162B85FB820097A6D6 /* ImagePicker.swift in Sources */,
 				2BE2A26E2B459B8300108588 /* inputView.swift in Sources */,
 				2BE2A2682B459B4E00108588 /* RegistrationView.swift in Sources */,
+				2B99DF3C2BC39D7300AB069F /* Protfolio statement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

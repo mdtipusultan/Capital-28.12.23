@@ -21,7 +21,7 @@ struct ProfileView: View {
                             print("Description for Row 2")
                         }
                     
-                    NavigationLink(destination: marketView()) {
+                    NavigationLink(destination: Protfolio_statement()) {
                         SimpleTitleRow(title: "Portfolio Statement")
                     }
                     
