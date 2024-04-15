@@ -42,11 +42,11 @@ struct Ledger_Statement: View {
             // Placeholder for content
             switch selectedTabIndex {
             case 0:
-                positions()
+                all_statements()
             case 1:
-                Balance()
+                debit()
             case 2:
-                Receivable()
+                credit()
             default:
                 Text("No Content")
             }
