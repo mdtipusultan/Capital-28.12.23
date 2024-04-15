@@ -27,6 +27,9 @@
 		2B8E1B182B89F17B0097A6D6 /* services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8E1B172B89F17A0097A6D6 /* services.swift */; };
 		2B99DF3C2BC39D7300AB069F /* Protfolio statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99DF3B2BC39D7200AB069F /* Protfolio statement.swift */; };
 		2B99DF3E2BC39F7000AB069F /* Ledger Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99DF3D2BC39F7000AB069F /* Ledger Statement.swift */; };
+		2BE0FEEC2BCD2E210031C6F7 /* all_statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE0FEEB2BCD2E210031C6F7 /* all_statements.swift */; };
+		2BE0FEEE2BCD2E300031C6F7 /* debit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE0FEED2BCD2E300031C6F7 /* debit.swift */; };
+		2BE0FEF02BCD2E3B0031C6F7 /* credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE0FEEF2BCD2E3B0031C6F7 /* credit.swift */; };
 		2BE2A2632B459A5700108588 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2602B459A5700108588 /* HomeView.swift */; };
 		2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2622B459A5700108588 /* ProfileView.swift */; };
 		2BE2A2682B459B4E00108588 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A2662B459B4E00108588 /* RegistrationView.swift */; };
@@ -71,6 +74,9 @@
 		2B8E1B172B89F17A0097A6D6 /* services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = services.swift; sourceTree = "<group>"; };
 		2B99DF3B2BC39D7200AB069F /* Protfolio statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protfolio statement.swift"; sourceTree = "<group>"; };
 		2B99DF3D2BC39F7000AB069F /* Ledger Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ledger Statement.swift"; sourceTree = "<group>"; };
+		2BE0FEEB2BCD2E210031C6F7 /* all_statements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = all_statements.swift; sourceTree = "<group>"; };
+		2BE0FEED2BCD2E300031C6F7 /* debit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debit.swift; sourceTree = "<group>"; };
+		2BE0FEEF2BCD2E3B0031C6F7 /* credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = credit.swift; sourceTree = "<group>"; };
 		2BE2A2602B459A5700108588 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2BE2A2622B459A5700108588 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2BE2A2662B459B4E00108588 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -233,8 +239,8 @@
 		2B99DF412BC3A07E00AB069F /* LedgerStatement */ = {
 			isa = PBXGroup;
 			children = (
-				2B99DF422BC3A0B900AB069F /* tabs */,
 				2B99DF3D2BC39F7000AB069F /* Ledger Statement.swift */,
+				2B99DF422BC3A0B900AB069F /* tabs */,
 			);
 			path = LedgerStatement;
 			sourceTree = "<group>";
@@ -242,6 +248,9 @@
 		2B99DF422BC3A0B900AB069F /* tabs */ = {
 			isa = PBXGroup;
 			children = (
+				2BE0FEEB2BCD2E210031C6F7 /* all_statements.swift */,
+				2BE0FEED2BCD2E300031C6F7 /* debit.swift */,
+				2BE0FEEF2BCD2E3B0031C6F7 /* credit.swift */,
 			);
 			path = tabs;
 			sourceTree = "<group>";
@@ -440,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3F95042B4D6F4A007B197A /* dateFormatter.swift in Sources */,
+				2BE0FEF02BCD2E3B0031C6F7 /* credit.swift in Sources */,
 				2B07F79B2B9EE15F00210CC0 /* NewsView.swift in Sources */,
 				2B3F950D2B4E8832007B197A /* TopSafeAreaColorModifier.swift in Sources */,
 				2B3F95002B4D44CD007B197A /* password recovery.swift in Sources */,
@@ -449,6 +459,7 @@
 				2B3F95142B4EB1DF007B197A /* shantaHomeView.swift in Sources */,
 				2B07F7952B9EE04100210CC0 /* IndicesView.swift in Sources */,
 				2B07F7972B9EE11B00210CC0 /* StocksView.swift in Sources */,
+				2BE0FEEC2BCD2E210031C6F7 /* all_statements.swift in Sources */,
 				2B07F7992B9EE14400210CC0 /* WatchlistView.swift in Sources */,
 				2BE2A2642B459A5700108588 /* ProfileView.swift in Sources */,
 				2B99DF3E2BC39F7000AB069F /* Ledger Statement.swift in Sources */,
@@ -456,6 +467,7 @@
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				2B8E1B182B89F17B0097A6D6 /* services.swift in Sources */,
 				2BF50C842BC52F6300126F79 /* Balance.swift in Sources */,
+				2BE0FEEE2BCD2E300031C6F7 /* debit.swift in Sources */,
 				2BF50C862BC52F7600126F79 /* Receivable.swift in Sources */,
 				2B3F94FC2B4917EB007B197A /* BiometricAuthView.swift in Sources */,
 				2B07F7922B9EE00800210CC0 /* OverviewView.swift in Sources */,
