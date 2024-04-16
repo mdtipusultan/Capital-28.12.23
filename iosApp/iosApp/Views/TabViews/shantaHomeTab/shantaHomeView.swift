@@ -9,6 +9,19 @@
 import SwiftUI
 
 struct shantaHomeView: View {
+    /*
+    init() {
+        // Customize navigation bar appearance
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        let color = UIColor(red: 0.592156862745098, green: 0.5490196078431373, blue: 0.12941176470588237, alpha: 1.0)
+        appearance.backgroundColor = color
+
+        
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+    */
     // Define arrays for news titles, details, and dates
     let newsTitles = ["ABBANK: Weekly NAV", "ACI: Dividend Disbursement"]
     let newsDetails = [
@@ -378,6 +391,7 @@ struct shantaHomeView: View {
                 .padding(.top, 20)
                 .padding(.horizontal, 20)
             }
+            
             .navigationBarTitle("SHANTA", displayMode: .inline)
             .navigationBarItems(
                 leading:
@@ -393,7 +407,10 @@ struct shantaHomeView: View {
                         Image(uiImage: UIImage(named: "alarm_nav_button")!)
                     }
             )
+
+           
         }//navigationview
+        
     }
 }
 
