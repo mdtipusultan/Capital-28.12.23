@@ -45,13 +45,29 @@ struct StocksView: View {
     ]
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 16) {
-                ForEach(stocks, id: \.self.0) { stock in
-                    StocksRow(name: stock.0, title: stock.1, value: stock.2, value2: stock.3)
+        ZStack(alignment: .bottomTrailing) {
+            ScrollView {
+                VStack(spacing: 16) {
+                    ForEach(stocks, id: \.self.0) { stock in
+                        StocksRow(name: stock.0, title: stock.1, value: stock.2, value2: stock.3)
+                    }
                 }
+                .padding(.vertical)
             }
-            .padding(.vertical)
+            // Button at the bottom right corner
+            Button(action: {
+                // Action for the button
+            }) {
+                Image(uiImage: UIImage(named: "filter")!)
+                    .resizable()
+                    .frame(width: 80, height: 80) // Set frame size to 40x40
+                    .padding()
+                    //.background(Color.blue)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .shadow(radius: 5)
+            }
+            .padding(20)
         }
         .navigationBarTitle("Stocks")
     }

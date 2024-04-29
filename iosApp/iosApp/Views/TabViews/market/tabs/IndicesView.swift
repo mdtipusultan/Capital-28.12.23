@@ -1,20 +1,10 @@
-//
-//  IndicesView.swift
-//  iosApp
-//
-//  Created by LEADS Corporation Limited on 11/3/24.
-//  Copyright © 2024 orgName. All rights reserved.
-//
-
-
-
 import SwiftUI
 
 struct IndicesRow: View {
     var name: String
-       var value: String
-       var title: String
-       var value2: String
+    var value: String
+    var title: String
+    var value2: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -54,13 +44,30 @@ struct IndicesView: View {
     ]
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 16) {
-                ForEach(indices, id: \.self.0) { index in
-                    IndicesRow(name: index.0, value: index.1, title: index.2, value2: index.3)
+        ZStack(alignment: .bottomTrailing) {
+            ScrollView {
+                VStack(spacing: 16) {
+                    ForEach(indices, id: \.self.0) { index in
+                        IndicesRow(name: index.0, value: index.1, title: index.2, value2: index.3)
+                    }
                 }
+                .padding(.vertical)
             }
-            .padding(.vertical)
+            // Button at the bottom right corner
+            Button(action: {
+                // Action for the button
+            }) {
+                Image(uiImage: UIImage(named: "filter")!)
+                
+                    .resizable()
+                    .frame(width: 80, height: 80) // Set frame size to 40x40
+                    .padding()
+                    //.background(Color.blue)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .shadow(radius: 5)
+            }
+            .padding(20)
         }
         .navigationBarTitle("Indices")
     }

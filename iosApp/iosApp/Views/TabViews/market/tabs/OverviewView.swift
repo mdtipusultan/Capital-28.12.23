@@ -1,11 +1,3 @@
-//
-//  OverviewView.swift
-//  iosApp
-//
-//  Created by LEADS Corporation Limited on 11/3/24.
-//  Copyright © 2024 orgName. All rights reserved.
-//
-
 import SwiftUI
 
 struct OverviewView: View {
@@ -33,16 +25,32 @@ struct OverviewView: View {
     ]
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 20) {
-                // Iterate over titles, values, and colors arrays
-                ForEach(Array(zip(titles, zip(values, colors))), id: \.0) { titleRow, valueColorRow in
-                    RowViews(titles: titleRow, values: valueColorRow.0, colors: valueColorRow.1)
+        ZStack(alignment: .bottomTrailing) {
+            ScrollView {
+                VStack(spacing: 20) {
+                    // Iterate over titles, values, and colors arrays
+                    ForEach(Array(zip(titles, zip(values, colors))), id: \.0) { titleRow, valueColorRow in
+                        RowViews(titles: titleRow, values: valueColorRow.0, colors: valueColorRow.1)
+                    }
                 }
+                .padding(.top, 20) // Add padding to the top
+                .padding(.bottom, 20) // Add padding to the bottom
+                .padding(.horizontal, 20)
             }
-            .padding(.top, 20) // Add padding to the top
-            .padding(.bottom, 20) // Add padding to the bottom
-            .padding(.horizontal, 20)
+            // Button at the bottom right corner
+            Button(action: {
+                // Action for the button
+            }) {
+                Image(uiImage: UIImage(named: "filter")!)
+                    .resizable()
+                    .frame(width: 80, height: 80) // Set frame size to 40x40
+                    .padding()
+                    //.background(Color.blue)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .shadow(radius: 5)
+            }
+            .padding(20)
         }
     }
 }
